@@ -64,3 +64,10 @@ export function int(x:number):number {
 export function isInt(x:number):boolean {
   return Number.isInteger(x)
 }
+
+const BASE = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+export function baseChars(base:number) {
+  ok(base <= BASE.length)
+  return BASE.substring(0, base)
+}

@@ -6,6 +6,10 @@ Deno.test('random', function() {
   console.log('s1=', s1)
   ok(s1.length===10)
 
+  let s2 = lib6.randomStr('1379', 10)
+  console.log('s2=', s2)
+  ok(s2.length===10)
+
   let u1 = lib6.uuid()
   console.log('u1=', u1)
 })
