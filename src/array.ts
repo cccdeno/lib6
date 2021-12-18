@@ -53,3 +53,8 @@ export function reduce(a: any, f: any, init: (x: any) => any) {
     }
     return result
 }
+
+// ================ map to ...=================
+export function toNumber(a:any) {
+    return map1(a, (o)=>parseFloat(o))
+}
