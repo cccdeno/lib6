@@ -1,2 +1,5 @@
-export * from "./src/fs.ts";
-export * from "./src/util.ts";
+export * from "./src/util.ts"
+export * from "./src/fs.ts"
+export * from "./src/random.ts"
+export * from "./src/array.ts"
+export * from "./src/csv.ts"
