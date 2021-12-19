@@ -1,7 +1,11 @@
 import {ok, eq} from 'https://deno.land/x/tdd/mod.ts'
 import * as lib6 from '../mod.ts'
 
-Deno.test('array', async function() {
+Deno.test("array:array", () => {
+  T.eq(R.array(3, "x"), ["x","x","x"])
+})
+
+Deno.test('array:map', async function() {
   let a = [1,2,3]
   let b = lib6.map1(a, (x)=>x*x)
   console.log('b=', b)
@@ -14,3 +18,4 @@ Deno.test('array', async function() {
   console.log('ia=', ia)
   eq(a, ia)
 })
+

@@ -29,6 +29,8 @@ export function ok(cond: boolean, errorMsg:string="") {
   if (!cond) throw Error(errorMsg)
 }
 
+export const be = ok
+
 export function range(begin:number, end:number, step:number=1) {
   let len = Math.floor((end-begin)/step)
   let a = new Array(len)
